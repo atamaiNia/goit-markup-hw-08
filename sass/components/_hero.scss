@@ -1,24 +1,51 @@
 .hero {
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(/images/hero-background-mobile.jpg);
+    url(/images/hero/hero-bg-mobile.jpg);
   background-color: var(--hero-bg-color);
   padding: 118px 0;
-  margin-left: auto;
-  margin-right: auto;
-  @media screen and (min-width: 1200px) {
-    padding: 200px 0;
-  }
-  @media screen and (min-width: 1200px) {
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/hero-background.jpg);
+      url(/images/hero/hero-bg-mobile-2x.jpg);
+  }
+
+  @include tablet {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(/images/hero/hero-bg-tablet.jpg);
+    background-color: var(--hero-bg-color);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(/images/hero/hero-bg-tablet-2x.jpg);
+    }
+  }
+
+  @include desktop {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(/images/hero/hero-bg-desktop.jpg);
+    margin-left: auto;
+    margin-right: auto;
     max-width: 1600px;
     height: 600px;
+    padding: 200px 0;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(/images/hero/hero-bg-desktop-2x.jpg);
+    }
   }
 }
 
 .hero__title {
   font-weight: 900;
-  font-size: 26px;
+  font-size: 20px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
@@ -27,7 +54,13 @@
   max-width: 696px;
   margin: 0 auto;
   margin-bottom: 30px;
-  @media screen and (min-width: 1200px) {
+
+  @include mobile {
+    font-size: 26px;
+    line-height: 1.62;
+  }
+
+  @include desktop {
     font-size: 44px;
     line-height: 1.36;
   }

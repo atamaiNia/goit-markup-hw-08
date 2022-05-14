@@ -6,7 +6,7 @@
 }
 
 .footer .container {
-  @media screen and (min-width: 480px) {
+  @include mobile {
     display: flex;
     align-items: baseline;
   }
@@ -19,10 +19,10 @@
 }
 .footer__contacts-container {
   margin-bottom: 60px;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-bottom: 0;
   }
-  @media screen and (min-width: 480px) {
+  @include mobile {
     margin-right: 70px;
     margin-left: 0;
   }
@@ -47,7 +47,7 @@
 
 .footer-contacts__item + .footer-contacts__item {
   margin-top: 8px;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-top: 9px;
   }
 }
@@ -73,10 +73,10 @@
 
 .footer__footer-join {
   margin-bottom: 60px;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     margin-bottom: 102px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-right: 93px;
     margin-bottom: 0;
   }
@@ -124,7 +124,7 @@
 }
 
 .subscribe__form {
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     display: flex;
   }
 }
@@ -144,7 +144,7 @@
     letter-spacing: 0.03em;
     color: var(--footer-text-color);
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 358px;
     margin-right: 12px;
   }
@@ -152,7 +152,7 @@
 
 .subscribe-form__input {
   margin-bottom: 20px;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-bottom: 0;
   }
 }
