@@ -3,12 +3,16 @@
   background-color: var(--footer-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  @include tablet {
+    padding-left: 76px;
+  }
 }
 
 .footer .container {
   @include tablet {
     display: flex;
     align-items: baseline;
+    flex-wrap: wrap;
   }
 }
 

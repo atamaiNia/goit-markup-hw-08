@@ -26,12 +26,21 @@
   &:nth-child(2n + 1) {
     margin-right: 30px;
   }
-  @include desktop {
-    width: calc((100% - 150px) / 6);
-    margin: 0;
-    & + & {
-      margin-left: 30px;
+
+  @include tablet {
+    width: calc((100% - 60px) / 3);
+    .clients__item:nth-child(2n + 1) {
+      margin-right: 0px;
+      margin-left: 0px;
     }
+  }
+}
+
+@include desktop {
+  width: calc((100% - 150px) / 6);
+  margin: 0;
+  & + & {
+    margin-left: 30px;
   }
 }
 

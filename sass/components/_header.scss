@@ -1,5 +1,12 @@
 .header {
   border-bottom: 1px solid #ececec;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 9px;
+  @include tablet {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .header .container {
@@ -29,8 +36,7 @@
   }
 }
 
-.menu__item + .menu__item,
-.contacts__item + .contacts__item {
+.menu__item + .menu__item {
   margin-left: 50px;
 }
 
@@ -72,9 +78,29 @@
 .contacts__list {
   display: none;
   @include tablet {
+    display: block;
+    margin-left: auto;
+    padding-top: 21px;
+  }
+
+  @include desktop {
     display: flex;
     align-items: center;
     margin-left: auto;
+  }
+}
+
+.contacts__item {
+  @include tablet {
+    &:first-child {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.contacts__item + .contacts__item {
+  @include desktop {
+    margin-left: 50px;
   }
 }
 
@@ -82,8 +108,8 @@
   display: flex;
   align-items: center;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
   transition: color var(--transition);
@@ -91,6 +117,10 @@
   &:hover,
   &:focus {
     color: var(--main-hover-color);
+  }
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
