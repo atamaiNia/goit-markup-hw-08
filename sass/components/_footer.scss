@@ -6,7 +6,7 @@
 }
 
 .footer .container {
-  @include mobile {
+  @include tablet {
     display: flex;
     align-items: baseline;
   }
@@ -22,7 +22,7 @@
   @include desktop {
     margin-bottom: 0;
   }
-  @include mobile {
+  @include tablet {
     margin-right: 70px;
     margin-left: 0;
   }

@@ -65,12 +65,12 @@
     margin-right: 0;
   }
 
-  &:nth-last-child(-n + 3) {
-    margin-bottom: 0;
-  }
   @include tablet {
     width: calc((100% - 60px) / 3);
     margin-right: 30px;
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -107,6 +107,9 @@
   .portfolio__projects-link:focus & {
     transform: translateY(0);
   }
+  @include mobile {
+    padding: 77px 24px;
+  }
   @include tablet {
     padding: 63px 24px;
   }
@@ -118,7 +121,7 @@
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: var(--third-text-color);
-  @include tablet {
+  @include mobile {
     font-size: 18px;
   }
 }
@@ -143,4 +146,7 @@
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+  @include mobile {
+    font-size: 16px;
+  }
 }

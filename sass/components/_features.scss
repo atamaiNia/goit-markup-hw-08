@@ -5,7 +5,7 @@
 }
 
 .features__list {
-  @include mobile {
+  @include tablet {
     display: flex;
   }
 }
