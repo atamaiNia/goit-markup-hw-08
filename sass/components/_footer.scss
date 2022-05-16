@@ -3,16 +3,28 @@
   background-color: var(--footer-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
-  @include tablet {
+
+  @include desktop {
     padding-left: 76px;
+    padding-right: 89px;
   }
 }
 
 .footer .container {
-  @include tablet {
+  @include desktop {
     display: flex;
     align-items: baseline;
     flex-wrap: wrap;
+  }
+}
+
+.flex-container {
+  @include tablet {
+    display: flex;
+    align-items: baseline;
+    padding-left: 61px;
+    padding-right: 74px;
+    margin: 0;
   }
 }
 
@@ -20,13 +32,15 @@
   text-align: center;
   width: 231px;
   margin: auto;
+  @include tablet {
+    margin: 0;
+  }
 }
+
 .footer__contacts-container {
   margin-bottom: 60px;
   @include desktop {
     margin-bottom: 0;
-  }
-  @include tablet {
     margin-right: 70px;
     margin-left: 0;
   }
@@ -78,8 +92,9 @@
 .footer__footer-join {
   margin-bottom: 60px;
   @include tablet {
-    margin-bottom: 102px;
+    margin-left: auto;
   }
+
   @include desktop {
     margin-right: 93px;
     margin-bottom: 0;
@@ -122,7 +137,12 @@
 /*******************SUBSCRIBE*******************/
 .footer-subscribe {
   text-align: center;
+  @include tablet {
+    width: 450px;
+    margin: 0 auto;
+  }
 }
+
 .footer-subscribe__title {
   margin-bottom: 20px;
 }
