@@ -11,6 +11,9 @@
 
 .header .container {
   display: flex;
+  @include desktop {
+    align-items: baseline;
+  }
 }
 
 .menu {
@@ -94,6 +97,11 @@
   @include tablet {
     &:first-child {
       margin-bottom: 10px;
+    }
+  }
+  @include desktop {
+    &:first-child {
+      margin-bottom: 0;
     }
   }
 }

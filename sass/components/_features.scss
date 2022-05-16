@@ -28,6 +28,9 @@
 
   @include desktop {
     width: calc((100% - 90px) / 4);
+    &:nth-child(odd) {
+      margin-right: 0;
+    }
     & + & {
       margin-left: 30px;
     }

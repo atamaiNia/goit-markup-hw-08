@@ -154,6 +154,10 @@
   font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  @include desktop {
+    font-size: 14px;
+  }
 }
 
 .checkbox__label {
