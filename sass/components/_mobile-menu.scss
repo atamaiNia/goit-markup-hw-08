@@ -5,10 +5,12 @@
   margin-left: auto;
   width: 40px;
   height: 40px;
+
   @include tablet {
     display: none;
   }
 }
+
 .icon-menu-open {
   fill: currentColor;
 
@@ -68,6 +70,7 @@
 
 .mobile-menu__nav-item:not(:last-child) {
   margin-bottom: 22px;
+
   @include mobile {
     margin-bottom: 32px;
   }
@@ -106,6 +109,7 @@
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
   margin-bottom: 44px;
+
   @include mobile {
     margin-bottom: 64px;
   }
@@ -119,6 +123,7 @@
   letter-spacing: 0.02em;
   color: var(--main-hover-color);
   margin-bottom: 22px;
+
   @include mobile {
     font-size: 34px;
     margin-bottom: 32px;
@@ -131,6 +136,7 @@
 
 .mobile-menu__social-item:not(:last-child) {
   margin-right: 10px;
+
   @include mobile {
     margin-right: 20px;
   }
@@ -143,6 +149,7 @@
   line-height: 22px;
   letter-spacing: 0.02em;
   color: var(--main-hover-color);
+
   &::after {
     position: absolute;
     content: '';
@@ -154,6 +161,7 @@
     right: 100%;
     margin-right: -2px;
   }
+
   @include mobile {
     font-size: 18px;
     &::after {

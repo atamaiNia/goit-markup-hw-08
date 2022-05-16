@@ -21,6 +21,7 @@
     padding-right: 74px;
     margin: 0;
   }
+
   @include desktop {
     padding-left: 0;
     padding-right: 0;
@@ -31,9 +32,11 @@
   text-align: center;
   width: 231px;
   margin: auto;
+
   @include tablet {
     margin: 0;
   }
+
   @include desktop {
     text-align: start;
   }
@@ -41,6 +44,7 @@
 
 .footer__contacts-container {
   margin-bottom: 60px;
+
   @include desktop {
     margin-bottom: 0;
     margin-right: 70px;
@@ -67,6 +71,7 @@
 
 .footer-contacts__item + .footer-contacts__item {
   margin-top: 8px;
+
   @include desktop {
     margin-top: 9px;
   }
@@ -89,6 +94,7 @@
 /***********************JOIN*******************/
 .footer-join {
   text-align: center;
+
   @include desktop {
     text-align: start;
   }
@@ -96,6 +102,7 @@
 
 .footer__footer-join {
   margin-bottom: 60px;
+
   @include tablet {
     margin-left: auto;
   }
@@ -142,10 +149,12 @@
 /*******************SUBSCRIBE*******************/
 .footer-subscribe {
   text-align: center;
+
   @include tablet {
     width: 450px;
     margin: 0 auto;
   }
+
   @include desktop {
     width: 100%;
     text-align: start;
@@ -177,6 +186,7 @@
     letter-spacing: 0.03em;
     color: var(--footer-text-color);
   }
+
   @include desktop {
     width: 358px;
     margin-right: 12px;
@@ -185,6 +195,7 @@
 
 .subscribe-form__input {
   margin-bottom: 20px;
+
   @include desktop {
     margin-bottom: 0;
   }
