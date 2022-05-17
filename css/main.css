@@ -1026,7 +1026,6 @@ body.modal-open {
             align-items: baseline;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    margin: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1054,6 +1053,11 @@ body.modal-open {
 
 .footer__contacts-container {
   margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer__contacts-container {
+    margin-bottom: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer__contacts-container {
