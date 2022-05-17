@@ -14,23 +14,22 @@
 }
 
 .flex-container {
+  margin-bottom: 60px;
   @include tablet {
     display: flex;
     align-items: baseline;
-    padding-left: 61px;
-    padding-right: 74px;
+    justify-content: space-around;
     margin: 0;
   }
 
   @include desktop {
-    padding-left: 0;
-    padding-right: 0;
+    margin-right: 93px;
+    margin-bottom: 0;
   }
 }
 
 .contacts-container__footer {
   text-align: center;
-  width: 231px;
   margin: auto;
 
   @include tablet {
@@ -39,12 +38,12 @@
 
   @include desktop {
     text-align: start;
+    width: 231px;
   }
 }
 
 .footer__contacts-container {
   margin-bottom: 60px;
-
   @include desktop {
     margin-bottom: 0;
     margin-right: 70px;
@@ -101,14 +100,7 @@
 }
 
 .footer__footer-join {
-  margin-bottom: 60px;
-
-  @include tablet {
-    margin-left: auto;
-  }
-
   @include desktop {
-    margin-right: 93px;
     margin-bottom: 0;
   }
 }
